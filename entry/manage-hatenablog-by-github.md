@@ -3,7 +3,7 @@ title: はてなブログを GitHub 管理に移行しました
 id: 
 categories:
   - 雑記
-draft: false
+draft: true
 ---
 
 表題の通り。
