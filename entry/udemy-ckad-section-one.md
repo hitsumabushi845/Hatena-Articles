@@ -1,10 +1,11 @@
 ---
-title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1 
+title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1
+date: 2021-03-20T04:08:00.000Z
 categories:
   - Kubernetes
+id: "26006613705795273"
 draft: true
 ---
-
 今年上半期は Certified Kubernetes Application Developer(CKAD) の取得を目指して勉強していく。
 先人の受検ログを見ると、Udemy にある Mumshad Mannambeth 氏の『Kubernetes Certified Application Developer (CKAD) with Tests』を活用している人が多かったので、先日のセールのタイミングで購入。
 同氏による CKA のコースも合わせて購入した。
