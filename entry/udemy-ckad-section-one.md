@@ -1,5 +1,5 @@
 ---
-title: 『Kubernetes Certified Application Developer (CKAD) with Tests』ログ - Section 1
+title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1, セクション2 
 date: 2021-03-20T04:08:00.000Z
 categories:
   - Kubernetes
@@ -34,3 +34,18 @@ Workloads APIs や Service APIs 等の基礎、Kubernetes のアーキテクチ�
 
 [^1]: これは kubeadm 使用/非使用でそれぞれ行った。kubeadm を使用したクラスタ構築の記録は Qiita に書いた。[https://qiita.com/hitsumabushi845/items/4a24109cf1408c0e30de:embed:cite]
 
+# Section 2: Core Concepts
+
+- Recap - Kubernetes Architecture
+- Recap - Pods  
+
+この2つはわりと日頃触れてるのでサクッと流す。  
+ここではじめて Practice Test が入る。Practice Test は、KobeKloud(Katacoda) を使って作られており、ブラウザ上で実際に k8s クラスタを触りながら確認テストができる。  
+これが学習体験としてけっこう楽しい。
+
+![画面イメージ](./img/KobeKloud_test.png)
+
+- Recap - ReplicaSets
+
+ReplicaSet は普段使わないので、思い出しがてらちょっとしっかりやる。
+ReplicationController の存在を（ほぼ）はじめて知る。ReplicaSet があるので今はつかわないのかな。
