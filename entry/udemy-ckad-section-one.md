@@ -13,7 +13,7 @@ draft: true
 
 同氏による CKA のコースも合わせて購入した。
 
-まずはイントロダクション、セクション1を完了したので、記録。
+まずはセクション1と2を完了したので、記録。
 
 # Section 1: Introduction
 
@@ -48,4 +48,27 @@ Workloads APIs や Service APIs 等の基礎、Kubernetes のアーキテクチ�
 - Recap - ReplicaSets
 
 ReplicaSet は普段使わないので、思い出しがてらちょっとしっかりやる。
-ReplicationController の存在を（ほぼ）はじめて知る。ReplicaSet があるので今はつかわないのかな。
+ReplicationController の存在を（ほぼ）はじめて知る。ReplicaSet には selector を定義できるが、ReplicationController はできない。  
+
+Deployment と違い、ローリングアップデートもできない。  
+例えば `kubectl edit` などで定義を書き換えても配下の Pod は再作成されない。  
+というかそもそも、ReplicaSet の上位に存在して、ReplicaSet を管理することでローリングアップデートやロールバック（など）を可能にしたリソースが Deployment。
+
+- Recap - Deployments
+
+というわけで Deployment。  
+Deployment 固有のフィールドとか結構忘れてるなーと思ったけど、このセクションではそれは扱わないっぽい。ここでは基礎のみ復習して、後段のセクションで詳細を扱うようだ。
+
+- Recap - Namespaces
+
+Namespace リソースそのものは簡単なのでサクッと。  
+...と思ったら急に Service とか DNS が出てきてびっくりした。Namespace をまたいだ名前解決の話もここだったようだ。
+
+- Certification Tip: Imperative Commands 
+
+yaml を使わずに kubectl コマンドだけでリソースを作る方法について。  
+CKAD の試験は時間がタイトなので、この手法をよく使うらしい。  
+
+Practice Test では Pod と Deployment の作成は難なくできたが、Service の作成が慣れておらず手間取った。  
+
+セクション2はここまで。次はセクション3: Configuration。
