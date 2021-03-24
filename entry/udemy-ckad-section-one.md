@@ -1,10 +1,10 @@
 ---
-title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1, セクション2
+title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション1・セクション2
 date: 2021-03-20T04:08:00.000Z
 categories:
   - Kubernetes
 id: "26006613705795273"
-draft: true
+draft: false
 ---
 今年上半期は Certified Kubernetes Application Developer(CKAD) の取得を目指して勉強していく。  
 先人の受検ログを見ると、Udemy にある Mumshad Mannambeth 氏の『Kubernetes Certified Application Developer (CKAD) with Tests』を活用している人が多かったので、先日のセールのタイミングで購入。
@@ -36,6 +36,8 @@ Workloads APIs や Service APIs 等の基礎、Kubernetes のアーキテクチ�
 
 # Section 2: Core Concepts
 
+このセクションでは、Pod, ReplicaSet, Deployment, Namespace, Service といった基本的なリソースについての説明とハンズオンテストが提供される。
+
 - Recap - Kubernetes Architecture
 - Recap - Pods  
 
@@ -43,7 +45,7 @@ Workloads APIs や Service APIs 等の基礎、Kubernetes のアーキテクチ�
 ここではじめて Practice Test が入る。Practice Test は、KobeKloud(Katacoda) を使って作られており、ブラウザ上で実際に k8s クラスタを触りながら確認テストができる。  
 これが学習体験としてけっこう楽しい。
 
-![画面イメージ](./img/KobeKloud_test.png)
+<figure class="figure-image figure-image-fotolife" title="Practice Test のイメージ">[f:id:hitsumabushi845:20210325011608p:plain]<figcaption>Practice Test のイメージ</figcaption></figure>
 
 - Recap - ReplicaSets
 
