@@ -1,5 +1,5 @@
 ---
-title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1, セクション2 
+title: 『Kubernetes Certified Application Developer (CKAD) with Tests』を始めた - セクション1, セクション2
 date: 2021-03-20T04:08:00.000Z
 categories:
   - Kubernetes
