@@ -42,7 +42,7 @@ Workloads APIs や Service APIs 等の基礎、Kubernetes のアーキテクチ�
 - Recap - Pods  
 
 この2つはわりと日頃触れてるのでサクッと流す。  
-ここではじめて Practice Test が入る。Practice Test は、KobeKloud(Katacoda) を使って作られており、ブラウザ上で実際に k8s クラスタを触りながら確認テストができる。  
+ここではじめて Practice Test が入る。Practice Test は、KodeKloud(Katacoda) を使って作られており、ブラウザ上で実際に k8s クラスタを触りながら確認テストができる。  
 これが学習体験としてけっこう楽しい。
 
 <figure class="figure-image figure-image-fotolife" title="Practice Test のイメージ">[f:id:hitsumabushi845:20210325011608p:plain]<figcaption>Practice Test のイメージ</figcaption></figure>
