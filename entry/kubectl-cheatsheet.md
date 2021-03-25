@@ -1,10 +1,11 @@
 ---
 title: 自分用 kubectl チートシート for CKAD
+date: 2021-03-25T16:00:52.000Z
 categories:
   - Kubernetes
+id: "26006613708476233"
 draft: true
 ---
-
 CKAD の対策にあたって、kubectl のチートシートが欲しくなったので、まとめる。
 
 - Pod:
