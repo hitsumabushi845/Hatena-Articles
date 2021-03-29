@@ -1,10 +1,11 @@
 ---
 title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション3
+date: 2021-03-25T16:00:52.000Z
 categories:
   - Kubernetes
+id: "26006613708476232"
 draft: true
 ---
-
 引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
 今回は Section 3: Configuration。
 
