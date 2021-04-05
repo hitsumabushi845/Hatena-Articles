@@ -4,7 +4,7 @@ date: 2021-03-25T16:00:52.000Z
 categories:
   - Kubernetes
 id: "26006613708476232"
-draft: true
+draft: false
 ---
 引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
 今回は Section 3: Configuration。
@@ -34,8 +34,8 @@ Pod manifest における `spec.containers[*].command`, `spec.containers[*].args
 `env` で指定するような key-value pair を外出しできるやつ。  
 `kubectl create configmap` で作成したり、
 
-```shell
-> kubectl create configmap \
+```shell-session
+$ kubectl create configmap \
     app-config --from-literal=APP_COLOR=blue \
                --from-literal=APP_MODE=prod
 ```
@@ -61,10 +61,10 @@ data:
 ConfigMap は平文で格納されるが、Secret は Base64 でエンコードされた状態で格納されるやつ。
 `kubectl create secret generic` や `kubectl create secret tls` で作成するか、yaml を書くか。
 
-```shell
-> kubectl create secret generic\
+```shell-session
+$ kubectl create secret generic \
     <secret-name> --from-literal=<key>=<value as plain>
-> kubectl create secret generic \
+$ kubectl create secret generic \
     <secret-name> --from-file=<path-to-file>
 ```
 
@@ -137,14 +137,14 @@ kube-scheduler はノードのリソース状況(CPU, Memory, Disk)を見なが�
 
 ## Taints and Tolerations
 
-Taint と Toleration は Pod を特定の Node にスケジューリングさせないための仕組み。
+Taint と Toleration は Pod を特定の Node にスケジューリングさせないための仕組み。  
 これらは、スケジューリング**させない**ための仕組みであって、Pod を特定の Node にスケジューリング**させる**ための仕組みは後述する Node Selector や Node Affinity が担う。
 
 Taint は Node に、Toleration は Pod に設定する。
 Node に設定された Taint と合致する Toleration が設定された Pod がスケジューリングされる。
 
 Taint は `kubectl taint nodes {node name} key=value:taint-effect` で設定できる。
-key, value が Taint の条件となり、taint-effect でその振る舞いを設定できる。
+key, value が Taint の条件となり、taint-effect でその振る舞いを設定できる。  
 `taint-effect` には `NoSchedule`, `PreferNoSchedule`, `NoExecute` がある。
 
 Toleration は、manifest の `spec.tolerations` に設定される。
@@ -167,8 +167,8 @@ Node Selector より柔軟な設定が可能なもの。
 
 [^1]: 将来的に `requiredDuringSchedulingRequiredDuringExecution` が提供される予定。
 
-required~ は必須条件。マッチする Node がない場合はスケジューリングされない。
-preferred~ は推奨条件。マッチする Node がない場合は他の Node へスケジューリングされる。
+required~ は必須条件。マッチする Node がない場合はスケジューリングされない。  
+preferred~ は推奨条件。マッチする Node がない場合は他の Node へスケジューリングされる。  
 `IgnoredDuringExecution` とあるように、実行中の Pod に対してはこの設定は影響せず、例えば nodeAffinity を設定した Pod が実行されている Node から、その nodeAffinity の条件を満たさなくなるようにラベルを削除したとしても、その Pod は削除されない[^2]。
 
 [^2]: 当然、`requiredDuringSchedulingRequiredDuringExecution` の場合は削除される。
