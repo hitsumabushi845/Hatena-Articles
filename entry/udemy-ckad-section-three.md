@@ -100,6 +100,7 @@ spec:
 ```
 
 コンテナ単位で設定する場合は、`containers` 以下に設定する。
+コンテナ単位での securityContext では、capabilities を設定でき、ユーザの権限を操作できる。これは Pod 単位ではできない。
 
 ## Service Account
 
@@ -136,6 +137,51 @@ kube-scheduler はノードのリソース状況(CPU, Memory, Disk)を見なが�
 
 ## Taints and Tolerations
 
+Taint と Toleration は Pod を特定の Node にスケジューリングさせないための仕組み。
+これらは、スケジューリング**させない**ための仕組みであって、Pod を特定の Node にスケジューリング**させる**ための仕組みは後述する Node Selector や Node Affinity が担う。
+
+Taint は Node に、Toleration は Pod に設定する。
+Node に設定された Taint と合致する Toleration が設定された Pod がスケジューリングされる。
+
+Taint は `kubectl taint nodes {node name} key=value:taint-effect` で設定できる。
+key, value が Taint の条件となり、taint-effect でその振る舞いを設定できる。
+`taint-effect` には `NoSchedule`, `PreferNoSchedule`, `NoExecute` がある。
+
+Toleration は、manifest の `spec.tolerations` に設定される。
+
+Master Node に Pod がスケジューリングされないのもこれのおかげ。
+
 ## Node Selectors
 
+Pod を特定の Node にスケジューリングさせるための仕組み。
+manifest の `spec.nodeSelector` に、Node に設定したラベルを指定する。
+
+Node にラベルを設定するには、`kubectl label nodes {node name} key=value` を実行する。
+
+Node Selector では、指定されたラベルへの完全一致のみサポートしているが、OR条件やNOT条件などを利用したいケースがあり、これは Node Affinity でサポートされる。
+
 ## Node Affinity
+
+Node Selector より柔軟な設定が可能なもの。
+`spec.affinity.nodeAffinity` に設定され、`requiredDuringSchedulingIgnoredDuringExecution` と `preferredDuringSchedulingIgnoredExecution` の2種類が設定できる[^1]。
+
+[^1]: 将来的に `requiredDuringSchedulingRequiredDuringExecution` が提供される予定。
+
+required~ は必須条件。マッチする Node がない場合はスケジューリングされない。
+preferred~ は推奨条件。マッチする Node がない場合は他の Node へスケジューリングされる。
+`IgnoredDuringExecution` とあるように、実行中の Pod に対してはこの設定は影響せず、例えば nodeAffinity を設定した Pod が実行されている Node から、その nodeAffinity の条件を満たさなくなるようにラベルを削除したとしても、その Pod は削除されない[^2]。
+
+[^2]: 当然、`requiredDuringSchedulingRequiredDuringExecution` の場合は削除される。
+
+かなり柔軟に設定できるため、フィールドがいろいろあって混乱する。
+この辺をブックマークして、試験中に見れるようにしておこう。  
+https://kubernetes.io/ja/docs/concepts/scheduling-eviction/assign-pod-node/  
+https://kubernetes.io/ja/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/
+
+## Taints & Tolerations vs Node Affinity
+
+特定の Node に特定の Pod **だけ**をスケジューリングさせたい場合は、Taints/Tolerations と Node Affinity を併用しようねという話。
+
+---
+
+Section 3 はここまで。ちょっと忘れちゃいそうな点がままあるので、折に触れて復習していこうと思う。
