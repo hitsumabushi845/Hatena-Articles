@@ -1,7 +1,9 @@
 ---
 title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション4・セクション5
+date: 2021-04-05T17:49:54.000Z
 categories:
   - Kubernetes
+id: "26006613712885760"
 draft: true
 ---
 引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
