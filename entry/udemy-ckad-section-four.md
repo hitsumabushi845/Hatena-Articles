@@ -4,7 +4,7 @@ date: 2021-05-03T18:08:15.000Z
 categories:
   - Kubernetes
 id: "26006613712885760"
-draft: true
+draft: false
 ---
 前回の記録から間が空いてしまったが引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
 今回は Section 4: Multi-Container PODs と Section 5: Observability。
@@ -68,7 +68,7 @@ Pod の作成に成功したこと(Pod 内のコンテナが正常に動作し�
 
 こちらも同様に、HTTP API call や TCP, コマンド実行で検証を行う。
 
-書き方は、Readiness Probe の `readinessProbe` を `livenessProbe` に変更したもの。
+書き方は、おおむね Readiness Probe の `readinessProbe` を `livenessProbe` に変更したもの。
 
 ## Container Logging
 
