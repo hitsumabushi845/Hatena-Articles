@@ -1,11 +1,11 @@
 ---
 title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション4・セクション5
+date: 2021-05-03T18:08:15.000Z
 categories:
   - Kubernetes
 id: "26006613712885760"
 draft: true
 ---
-
 前回の記録から間が空いてしまったが引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
 今回は Section 4: Multi-Container PODs と Section 5: Observability。
 
