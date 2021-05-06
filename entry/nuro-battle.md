@@ -164,6 +164,7 @@ NURO が開通できた場合即座に解約することとなるため、違約
 そして先日 4/22、ついに屋外工事が完了したわけである。
 
 というわけで、VDSL と NURO の速度比較画像をもって本記事の結びとしたい。
+なお、開通したプランとしては NURO 光 G2 V(旧: マンションミニ)プランである。
 
 <figure class="figure-image figure-image-fotolife" title="VDSL">[f:id:hitsumabushi845:20210504023218p:plain]<figcaption>VDSL</figcaption></figure>
 
