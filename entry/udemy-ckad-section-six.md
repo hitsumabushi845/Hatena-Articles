@@ -4,7 +4,7 @@ date: 2021-05-13T13:41:08.000Z
 categories:
   - Kubernetes
 id: "26006613763351462"
-draft: true
+draft: false
 ---
 引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
 今回は Section 6: POD Design。
