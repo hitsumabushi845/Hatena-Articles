@@ -1,13 +1,13 @@
 ---
-title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション6
+title: 『Kubernetes Certified Application Developer (CKAD) with Tests』記録 - セクション8
 date: 2021-06-10T15:48:28.000Z
 categories:
   - Kubernetes
 id: "26006613774485036"
-draft: true
+draft: false
 ---
 引き続き、『Kubernetes Certified Application Developer (CKAD) with Tests』を進めていく。  
-今回は Section 8: State Persistence。
+今回は Section 8: State Persistence。ここまでで試験範囲は終わり。以降は Mock Exam(模試) となる。
 
 # Section 8: State Persistence
 
