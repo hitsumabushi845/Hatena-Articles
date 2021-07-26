@@ -1,10 +1,11 @@
 ---
 title: 『Kubernetes Certified Administrator (CKA) with Practice Tests』記録 - セクション1~4
+date: 2021-07-26T08:46:02.000Z
 categories:
   - Kubernetes
+id: "26006613790836794"
 draft: true
 ---
-
 [https://qiita.com/hitsumabushi845/items/a6ae8935eaf509fb5381:embed:cite]
 
 というわけで、CKAD を取得したので引き続き CKA の取得へ向けて勉強していく。
