@@ -1,10 +1,11 @@
 ---
 title: 『Kubernetes Certified Administrator (CKA) with Practice Tests』記録 - セクション5
+date: 2021-07-28T11:36:59.000Z
 categories:
   - Kubernetes
+id: "26006613791515244"
 draft: true
 ---
-
 引き続き、『Kubernetes Certified Administrator (CKA) with Practice Tests』を進めていく。
 今回は Section 5: Application Lifecycle Management。
 
