@@ -4,7 +4,7 @@ date: 2021-07-26T08:46:02.000Z
 categories:
   - Kubernetes
 id: "26006613790836794"
-draft: true
+draft: false
 ---
 [https://qiita.com/hitsumabushi845/items/a6ae8935eaf509fb5381:embed:cite]
 
