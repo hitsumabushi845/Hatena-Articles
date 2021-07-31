@@ -4,7 +4,7 @@ date: 2021-07-31T14:35:31.000Z
 categories:
   - Kubernetes
 id: "26006613791515244"
-draft: true
+draft: false
 ---
 引き続き、『Kubernetes Certified Administrator (CKA) with Practice Tests』を進めていく。
 今回は Section 5: Application Lifecycle Management。
