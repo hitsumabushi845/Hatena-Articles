@@ -4,7 +4,7 @@ date: 2021-07-06T01:48:30.000Z
 categories:
   - 雑記
 id: "26006613791515248"
-draft: true
+draft: false
 ---
 2021年も半分がすぎたので、[https://hitsumabushi845.hatenablog.com/entry/2021/01/02/092252] で掲げた目標について、現状を確認して下半期の動き方を考える。
 
