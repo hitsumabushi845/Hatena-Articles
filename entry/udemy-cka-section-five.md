@@ -1,5 +1,6 @@
 ---
 title: 『Kubernetes Certified Administrator (CKA) with Practice Tests』記録 - セクション5, 6
+date: 2021-07-31T14:35:31.000Z
 categories:
   - Kubernetes
 id: "26006613791515244"
