@@ -18,7 +18,7 @@ Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』�
 - 25% - Cluster Architecture, Installation & Configuration
   - Manage RBAC  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296110#overview
-  - Use Kubeadm to install a basic cluster
+  - Use Kubeadm to install a basic cluster  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/20666292#overview
   - Manage a HA Kubernetes cluster  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296190#overview
@@ -33,7 +33,7 @@ Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』�
   - Know how to scale applications  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296008#overview
   - Use ConfigMaps & Secrets to configure applications  
-  ConfigMap: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14412322#overview
+  ConfigMap: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14412322#overview  
   Secret: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296016#overview
   - Understand the primitives used to create robust, self-healing, application deployments  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296030#overview  
@@ -58,7 +58,7 @@ Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』�
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296152#overview
 - 10% - Storage
   - Understand storage classes, persistent volumes  
-  StorageClass: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/21795216#overview
+  StorageClass: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/21795216#overview  
   PV: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296126#overview
   - Understand volume mode, access modes and reclaim policies  
   https://kubernetes.io/ja/docs/concepts/storage/persistent-volumes/#%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%A2%E3%83%BC%E3%83%89
@@ -69,13 +69,13 @@ Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』�
 - 30% - Troubleshooting
   - Evaluate cluster and node logging  
   - Understand how to monitor applications  
-  - Manage container stdout & stderr logs
+  - Manage container stdout & stderr logs  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14295996#overview
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296002#overview
   - Troubleshoot application failure  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296310#overview
   - Troubleshoot cluster component failure  
-  ControlPlane: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296312#overview
+  ControlPlane: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296312#overview  
   WorkerNode: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/14296314#overview
   - Troubleshoot networking  
   https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/24452872#overview
