@@ -4,7 +4,7 @@ date: 2021-08-06T14:37:34.000Z
 categories:
   - Kubernetes
 id: "26006613794533820"
-draft: true
+draft: false
 ---
 [https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/:embed:cite]
 
