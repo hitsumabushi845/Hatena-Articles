@@ -1,10 +1,11 @@
 ---
 title: CKA Exam Curriculum v1.21 と Udemy『Kubernetes Certified Administrator (CKA) with Practice Tests』の対応
+date: 2021-08-06T14:37:34.000Z
 categories:
   - Kubernetes
+id: "26006613794533820"
 draft: true
 ---
-
 [https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/:embed:cite]
 
 Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』を利用していて、講座の構成が現在のカリキュラムに合っていない部分があったので、2021年8月現在利用されているカリキュラム、v1.21 との対応表を作成した。  
