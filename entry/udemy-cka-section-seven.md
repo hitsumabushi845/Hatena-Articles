@@ -69,7 +69,7 @@ draft: true
       - 発行: `openssl x509 -in admin.csr -CA ca.crt -CAkey ca.key -out admin.crt`
       - `CN`(コモンネーム) がユーザーとして扱われ、`O`(組織) がグループとして扱われる。
         - 各種コンポーネントのクライアント証明書においては、`CN`, `O` は指定の値にする必要がある。
-        - kubelet の場合は `system:node:<nodeName>`, kube-controller-manager の場合は `system:kube-controller-manager`...といった形に。
+        - kubelet の場合は `system:node:{nodeName}`, kube-controller-manager の場合は `system:kube-controller-manager`...といった形に。
   - View Certificate Details
     - 証明書の場所は kubeadm で構築したクラスタの場合は static pod のマニフェストに引数として書いてある
     - `*.crt` ファイルの確認: `openssl x509 -in /path/to/certificate.crt -text -noout`
@@ -163,7 +163,7 @@ draft: true
       apiGroup: rbac.authorization.k8s.io
     ```
   - Role は namespace-wide なリソースであるため、Role が作成された namespace 内のリソースにのみ認可される。cluster-wide に認可するためには ClusterRole/ClusterRoleBinding を使用する。
-  - 自分があるリソースに対する操作が可能か確認するコマンド: `kubectl auth can-i <verb> <resource> [--as <user name>]`
+  - 自分があるリソースに対する操作が可能か確認するコマンド: `kubectl auth can-i {verb} {resource} [--as {user name}]`
 - Cluster Roles and Cluster Role Bindings
   - Pod, Deployment, Job, Service, Secret, PVC... は namespace-wide。Node, PV, CSR, Namespace, そして ClusterRole, ClusterRoleBinding は cluster-wide なリソース。
   - 各リソースのスコープを確認したい場合は、`kubectl api-resources --namespaced=true/false` で。
