@@ -80,22 +80,24 @@ draft: true
 - Certificates API
   - ユーザーのクライアント証明書を作成するためのAPIが備わっている
   - クライアント証明書を作成したいユーザは秘密鍵とCSRを作成し、CSR から CertificateSigningRequest リソースを作成する。
-    ```yaml
-    apiVersion: certificates.k8s.io/v1
-    kind: CertificateSigningRequest
-    metadata:
-      name: foo
-    spec:
-      groups:
-      - system:authenticated
-      usages:
-      - digital signature
-      - key encipherment
-      - server auth
-      request:
-        {base64 encoded csr}
-      signerName: kubernetes.io/kube-apiserver-client
-    ```
+
+```yaml
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: foo
+spec:
+  groups:
+  - system:authenticated
+  usages:
+  - digital signature
+  - key encipherment
+  - server auth
+  request:
+    {base64 encoded csr}
+  signerName: kubernetes.io/kube-apiserver-client
+```
+
 - KubeConfig
   - クラスタに対してAPIを実行するとき、APIエンドポイントの情報やクライアント証明書の情報が必要となる。curl で叩くときはこれらを指定しているが、kubectl から API を実行するときは kubeconfig ファイルを利用する。
   - デフォルトでは kubectl `~/.kube/config` を見に行く。
@@ -134,36 +136,39 @@ draft: true
 - RBAC
   - ロールは Role リソースで作成する。
     ```yaml
-    apiVersion: rbac.authorization.k8s.io/v1
-    kind: Role
-    metadata:
-      name: developer
-    rules:
-    - apiGroups: [""]
-      resources: ["pods"]
-      verbs: ["list", "get", "create", "update", "delete"]
-    - apiGroups: [""]
-      resources: ["ConfigMap"]
-      verbs: ["create"]
     ```
     - resourceName フィールドでさらに認可するリソースの名称で絞ることが可能
   - ユーザをロールに紐付けるには、RoleBinding リソースを作成する。
-    ```yaml
-    apiVersion: rbac.authorization.k8s.io/v1
-    kind: RoleBinding
-    metadata:
-      name: devuser-binding
-    subjects:
-    - kind: User
-      name: dev-user
-      apiGroup: rbac.authorization.k8s.io
-    roleRef:
-      kind: Role
-      name: developer
-      apiGroup: rbac.authorization.k8s.io
-    ```
   - Role は namespace-wide なリソースであるため、Role が作成された namespace 内のリソースにのみ認可される。cluster-wide に認可するためには ClusterRole/ClusterRoleBinding を使用する。
   - 自分があるリソースに対する操作が可能か確認するコマンド: `kubectl auth can-i {verb} {resource} [--as {user name}]`
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: developer
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["list", "get", "create", "update", "delete"]
+- apiGroups: [""]
+  resources: ["ConfigMap"]
+  verbs: ["create"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: devuser-binding
+subjects:
+- kind: User
+  name: dev-user
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: developer
+  apiGroup: rbac.authorization.k8s.io
+```
+
 - Cluster Roles and Cluster Role Bindings
   - Pod, Deployment, Job, Service, Secret, PVC... は namespace-wide。Node, PV, CSR, Namespace, そして ClusterRole, ClusterRoleBinding は cluster-wide なリソース。
   - 各リソースのスコープを確認したい場合は、`kubectl api-resources --namespaced=true/false` で。
