@@ -3,7 +3,7 @@ title: 『Kubernetes Certified Administrator (CKA) with Practice Tests』記録 
 date: 2021-10-07T09:01:58.000Z
 categories:
   - Kubernetes
-id: "13574176438020058198"
+id: "13574176438031556850"
 draft: true
 ---
 9月は忙しくあまり進められていなかったが、引き続き『Kubernetes Certified Administrator (CKA) with Practice Tests』を進めていく。
