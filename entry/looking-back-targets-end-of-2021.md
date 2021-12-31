@@ -6,7 +6,6 @@ categories:
 id: "13574176438047875011"
 draft: true
 ---
-
 2021年も1年お疲れ様でした。
 
 [https://hitsumabushi845.hatenablog.com/entry/2021/01/02/092252:embed:cite] 
