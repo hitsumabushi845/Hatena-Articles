@@ -4,7 +4,7 @@ date: 2021-12-31T02:19:05.000Z
 categories:
   - 雑記
 id: "13574176438047875011"
-draft: true
+draft: false
 ---
 2021年も1年お疲れ様でした。
 
