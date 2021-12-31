@@ -6,11 +6,16 @@ categories:
 id: "13574176438047875011"
 draft: true
 ---
-2021年も1年お疲れ様でした。[https://hitsumabushi845.hatenablog.com/entry/2021/01/02/092252] で掲げた目標について、結果を確認していきましょう。
+
+2021年も1年お疲れ様でした。
+
+[https://hitsumabushi845.hatenablog.com/entry/2021/01/02/092252:embed:cite] 
+
+で掲げた目標について、結果を確認していきましょう。
 
 ## 資格をとる
 
-> 今年受検したいと思っているものは以下の通り。
+> 今年受検したいと思っているものは以下の通り。  
 > - CKA or CKAD  
 > - TOEIC  
 
