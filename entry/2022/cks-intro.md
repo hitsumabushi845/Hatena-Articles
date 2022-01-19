@@ -4,7 +4,7 @@ date: 2022-01-19T10:02:04.000Z
 categories:
   - Kubernetes
 id: "13574176438054418818"
-draft: true
+draft: false
 ---
 Certified Kubernetes Security Specialist(CKS) の取得を目指して勉強していく。  
 CKA/CKAD の際にもお世話になった KodeKloud 上で CKS のコースが提供されているので、こちらをベースに勉強を進める。
