@@ -1,10 +1,11 @@
 ---
 title: KodeKloud『Kubernetes Certified Security Specialist (CKS)』記録 - Cluster Setup & Hardening
+date: 2022-02-09T09:21:36.000Z
 categories:
   - Kubernetes
+id: "13574176438061644877"
 draft: true
 ---
-
 引き続き、KodeKloud『Kubernetes Certified Security Specialist(CKS)』を進めていく。  
 今回は Cluster Setup & Hardening のセクション。
 
