@@ -1,7 +1,9 @@
 ---
 title: CKS Exam Curriculum v1.23 と KodeKloud『Kubernetes Certified Security Specialist (CKS)』の対応
+date: 2022-02-17T01:45:55.000Z
 categories:
   - Kubernetes
+id: "13574176438064320792"
 draft: true
 ---
 [https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/:embed:cite]
