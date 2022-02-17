@@ -4,7 +4,7 @@ date: 2022-02-17T01:45:55.000Z
 categories:
   - Kubernetes
 id: "13574176438064320792"
-draft: true
+draft: false
 ---
 [https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/:embed:cite]
 
