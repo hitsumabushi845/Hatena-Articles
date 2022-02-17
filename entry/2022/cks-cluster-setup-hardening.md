@@ -69,14 +69,49 @@ KubeletConfiguration ファイルの場所を探すところから始まるの�
 
 ## Kubectl Proxy & Port Forward
 
+`kubectl proxy` と `kubectl port-forward` について。後続の講座のための前振り。
+`kubectl proxy` は kube-apiserver に対するプロキシをローカルに立てる。プロキシに対して curl で API を叩くときは認証情報がいらなくなる（proxy が kubeconfig をよしなにやってくれるっぽい）
+`kubectl port-forward` はクラスタ内の Pod や Service のポートをローカルのポートにマッピングする。
+
 ## Lab: Kubectl Proxy & Port Forward
+
+`kubectl proxy` と `kubectl port-forward` を使ってみるハンズオン。クラスタ内のリソースやクラスタのAPIに対して `localhost` でアクセスできることを確認する。
 
 ## Kubernetes Dashboard
 
-## Securing Kubernetes Dashboard
+[https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/:embed:cite]
+
+Kubernetes Dashboard について。
+GUI でクラスタのリソースを管理できるダッシュボード画面だが、本当になんでもできてしまうのでアクセス制御は慎重に行わなければならない。
+
+デフォルトでは ClusterIP で公開されており、クラスタ外からアクセスするには `kubectl proxy` でプロキシすることが推奨される。これによりクラスタへの認証情報がない場合はダッシュボードにアクセスできない。
+また、ダッシュボードへのログインを ServiceAccount の Bearer Token や kubeConfig ファイルで行う形にすることもできる。
 
 ## Lab: Securing Kubernetes Dashboard
 
+Kubernetes Dashboard のデプロイ、`kubectl proxy` によるアクセスの確認、ServiceAccount, Role, RoleBinding の作成による認可の制御を確認するハンズオン。 
+
 ## Verify platform binaries before deploying
 
+Kubernetes クラスタコンポーネントのバイナリをダウンロードしたらチェックサムを確認しようねという話。
+悪意の第三者がダウンロードされるファイル悪意のあるプログラムが実行されるバイナリにすり替えることがあるので。
+
+チェックサムは `shasum` とか `sha512sum` コマンドで確認できる。
+
 ## Lab: Verify platform binaries
+
+GitHub からバイナリをダウンロードしてきて、チェックサムを確認するハンズオン。
+複数の（ダウンロード済みの）ファイルから正しいファイルはどれ？みたいな設問もあってわかりやすい。
+
+## Kubernetes Software Versions
+
+## Cluster Upgrade Process
+
+## Lab: Cluster Upgrade
+
+## Network Policy 
+
+## Ingress
+
+## Docker Service Configuration
+
