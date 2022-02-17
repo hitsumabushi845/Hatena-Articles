@@ -11,8 +11,7 @@ draft: false
 Udemy 講座『Kubernetes Certified Administrator (CKA) with Practice Tests』を利用していて、講座の構成が現在のカリキュラムに合っていない部分があったので、2021年8月現在利用されているカリキュラム、v1.21 との対応表を作成した。  
 参照したカリキュラムは以下。
 
-[https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.21.pdf:embed:cite]
-
+[https://github.com/cncf/curriculum/blob/master/old-versions/CKA_Curriculum_v1.21.pdf:embed:cite]
 
 今現在こちらの Udemy 講座を受講中のため、不足や誤りがあるかもしれないが、その場合は適宜修正する。
 
