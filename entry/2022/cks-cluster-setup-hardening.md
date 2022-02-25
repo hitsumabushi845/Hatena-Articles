@@ -1,6 +1,5 @@
 ---
 title: KodeKloud『Kubernetes Certified Security Specialist (CKS)』記録 - Cluster Setup & Hardening
-date: 2022-02-09T09:21:36.000Z
 categories:
   - Kubernetes
 id: "13574176438061644877"
@@ -103,15 +102,44 @@ Kubernetes クラスタコンポーネントのバイナリをダウンロード
 GitHub からバイナリをダウンロードしてきて、チェックサムを確認するハンズオン。
 複数の（ダウンロード済みの）ファイルから正しいファイルはどれ？みたいな設問もあってわかりやすい。
 
-## Kubernetes Software Versions
-
-## Cluster Upgrade Process
-
-## Lab: Cluster Upgrade
-
-## Network Policy 
-
-## Ingress
-
 ## Docker Service Configuration
 
+Docker デーモンの設定について。  
+
+`/var/run/docker.sock` に Docker の UNIX ソケットがあり、Docker CLI はこことやり取りしている。
+デフォルトではシステムの外部からソケットにアクセスすることはできないため、Docker ホストとクライアントは同じである必要がある。  
+Docker デーモン起動時に、`--host=tcp://{IP Address}:{Port}` を指定することで、指定のポートで受け付けることができる。（例: `--host=tcp://192.168.1.10:2375`）  
+これにより、Docker ホスト外からのアクセスができるようになる。ホスト外から Docker CLI で指定のホストにアクセスするには、`DOCKER_HOST` 環境変数を指定する。（例: `export DOCKER_HOST="tcp://192.168.1.10:2375"`）  
+しかし、もしホストがインターネットに公開されている場合は、誰もがアクセスできてしまうため、このオプションはデフォルトで無効化されている。公開する場合はネットワークのセキュリティを考慮する必要がある。
+
+もし Docker ホストを公開する場合は、通信の TLS 暗号化を行う。通信の TLS 暗号化は、`--tls`, `--tlscert`, `--tlskey` オプションで設定する。  
+（例: `--tls=true --tlscert=/var/docker/server.pem --tlskey=/var/docker/serverkey.pem`）
+
+これらのオプションは設定ファイルに記述することもでき、`/etc/docker/daemon.json` ファイルに記述する。
+
+```json
+{
+  "debug": true,
+  "hosts": ["tcp://192.168.1.10:2376"],
+  "tls": true,
+  "tlscert": "/var/docker/server.pem",
+  "tlskey": "/var/docker/serverkey.pem"
+}
+```
+
+## Docker - Securing the Daemon
+
+Docker デーモン、Docker ホストの保護について。
+
+1. サーバ自体のセキュア化
+  - パスワード認証を無効化し SSH 鍵認証を有効化する、ユーザを切る、不要なポートは閉じるなど
+2. 通信の TLS 暗号化(上述)
+  - Ref.: https://docs.docker.com/engine/security/protect-access/
+3. Docker デーモンに証明書による認証を入れる
+  - `daemon.json` に `"tlsverify": true`, `"tlscacert": /path/to/cacert.pem` を追加
+  - クライアント側でも `DOCKER_TLS_VERIFY=true` 環境変数を設定しておき、`~/.docker` にクライアント証明書を配置しておく。
+
+Cluster Setup & Hardening のセクションはここまで。
+多層防御の考え方のもと、マシン、OS、Docker デーモン、Kubernetes コンポーネントなどなど様々な対象のセキュリティについて確認した。一通りさらったという印象なので、まだ整理がつかない部分もあるがひとまず先に進む。
+
+実はこのセクションが一番ボリュームのあるセクションだったので、以降はもう少しスムーズに進められるといい。
