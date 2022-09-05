@@ -3,7 +3,7 @@ title: KodeKloud『Kubernetes Certified Security Specialist (CKS)』記録 - Clu
 date: 2022-02-25T08:48:54.000Z
 categories:
   - Kubernetes
-id: "13574176438061644877"
+id: "4207112889915213590"
 draft: true
 ---
 引き続き、KodeKloud『Kubernetes Certified Security Specialist(CKS)』を進めていく。  
