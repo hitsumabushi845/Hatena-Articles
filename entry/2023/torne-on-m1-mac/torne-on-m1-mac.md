@@ -14,7 +14,7 @@ nasne は、PlayStation やスマートフォン、PC で torne アプリを使�
 
 というわけでアプリを入れて視聴できて良かったね、となるのだが、torne mobile の仕様として「USB 外部出力に音声を出力できない」というものがある。  
 
-![torne mobile can't output audio](./img/torne-cant-output-audio.png)
+![torne mobile can't output audio](./torne-cant-output-audio.png)
 
 これはコンテンツの保護のためかと思うが、せっかく外部スピーカーを使用しているので、なんとかそこに音声を流す方法を模索した。
 
@@ -31,11 +31,11 @@ OSSで提供される仮想オーディオドライバ。
 
 まず、Mac の音声出力を BlackHole に設定する。
 
-![Set output to BlackHole](./img/output-setting.png)
+![Set output to BlackHole](./output-setting.png)
 
 その後、LadioCast で BlackHole の音声を外部出力に流すように設定する。
 
-![LadioCast setting](./img/ladiocast-setting.png)
+![LadioCast setting](./ladiocast-setting.png)
 
 BlackHole は USB 機器として認識されないため、torne mobile の音声も LadioCast を通じて外部出力に流れる。
 
