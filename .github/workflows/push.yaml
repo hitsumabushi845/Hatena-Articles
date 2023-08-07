@@ -1,6 +1,10 @@
 name: Push
 
-on: workflow_dispatch
+on:
+  push:
+    paths:
+      - entry/**
+  workflow_dispatch:
 
 jobs:
   push:
