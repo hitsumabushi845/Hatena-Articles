@@ -6,7 +6,6 @@ categories:
 id: "820878482956348192"
 draft: true
 ---
-
 My New Gear...
 
 ## AIRSTEP 購入のきっかけ
