@@ -17,7 +17,7 @@ My New Gear...
 
 というわけで、XSONIC 社の AIRSTEP を買いました。
 
-[https://hookup.co.jp/products/xsonic/airstep:embed:site]
+[https://hookup.co.jp/products/xsonic/airstep:embed:cite]
 
 ## AIRSTEP とは
 
@@ -30,7 +30,7 @@ My New Gear...
 インターフェースと機能が素晴らしく、主に以下の機能を備えています。
 
 - 5つのフットスイッチ
-	- フットスイッチは、Press/Release/Long Press の3種類のアクションでそれぞれ異なる信号を設定できる
+  - フットスイッチは、Press/Release/Long Press の3種類のアクションでそれぞれ異なる信号を設定できる
 - 5つまで設定を保存できる
 - エクスプレッションペダルを2つまで接続できる
 - MIDI 信号だけでなく、PC のキーボードと同等の HID コマンドを送信できる
@@ -42,7 +42,7 @@ My New Gear...
 
 ## 自分のプリセット
 
-5つまでプリセットを保存できるので、とりあえず以下のように設定をしています。
+5つまでプリセットを保存できるので、とりあえず以下のように設定をしています。  
 なお、主要な音楽系アプリ/デバイス向けのプリセットはスマートフォンの AIRSTEP App に収録されています。
 
 1. BIAS FX 向けプリセット
@@ -51,11 +51,11 @@ My New Gear...
 4. Music App 向けプリセット
   - 上記4つは収録済みプリセットを利用
 5. 適当キーボードショートカットプリセット
-  - Space Key, control+tab, control+shift+tab, option+tab, option+shift+tab の順に設定。
-  - Space はなにかと使うことがありそうなので
-  - control+tab, control+shift+tab はブラウザのタブ移動
-  - option+tab, option+shift+tab は [AltTab](https://alt-tab-macos.netlify.app/) と組み合わせてアクティブなアプリのウィンドウ切り替え...に使おうと思ったけど、切り替えは option 押しっぱなしで tab を連打という形なので上手くいかない。
-    - [Magnet](https://magnet.crowdcafe.com/) と組み合わせてウィンドウのサイズ変更でも設定しようかな？
+   - Space Key, control+tab, control+shift+tab, option+tab, option+shift+tab の順に設定。
+   - Space はなにかと使うことがありそうなので
+   - control+tab, control+shift+tab はブラウザのタブ移動
+   - option+tab, option+shift+tab は [AltTab](https://alt-tab-macos.netlify.app/) と組み合わせてアクティブなアプリのウィンドウ切り替え...に使おうと思ったけど、切り替えは option 押しっぱなしで tab を連打という形なので上手くいかない。
+     - [Magnet](https://magnet.crowdcafe.com/) と組み合わせてウィンドウのサイズ変更でも設定しようかな？
 
 上記のプリセットの全てに、
 
