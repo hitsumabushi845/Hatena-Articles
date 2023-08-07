@@ -8,6 +8,8 @@ draft: true
 ---
 My New Gear...
 
+[f:id:hitsumabushi845:20230807230312j:plain]
+
 ## AIRSTEP 購入のきっかけ
 
 以前から自宅でのギター練習に BIAS FX と Archetype: Petrucci を利用していて、フットコントローラー（とエクスプレッションペダル）を利用してパッチの切り替えやエフェクターのオンオフなどを行いたいと思っていました。  
@@ -49,7 +51,7 @@ My New Gear...
 2. Guitar Pro 向けプリセット
 3. YouTube 向けプリセット
 4. Music App 向けプリセット
-  - 上記4つは収録済みプリセットを利用
+   - 上記4つは収録済みプリセットを利用
 5. 適当キーボードショートカットプリセット
    - Space Key, control+tab, control+shift+tab, option+tab, option+shift+tab の順に設定。
    - Space はなにかと使うことがありそうなので
