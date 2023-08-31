@@ -3,7 +3,7 @@ title: XSONIC AIRSTEP を買った
 date: 2023-08-07T13:56:11.150Z
 categories:
   - 雑記
-id: "820878482956348192"
+id: "820878482963428204"
 draft: true
 ---
 My New Gear...
